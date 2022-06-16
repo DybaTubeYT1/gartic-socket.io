@@ -7,7 +7,7 @@ const socketIo = require('socket.io');
 
 const io = socketIo.listen(server);
 
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log('running')
 })
 
